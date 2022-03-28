@@ -6,10 +6,31 @@
     <link rel="icon" type = "image/png" href="src/media/images/oe_logo.png" />
 </head>
 <body>
-    <header>
-        <h1>Open Events</h1>
-    </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <h1>OpenEvents</h1>
+        <section>
+            <form>
+                <input type="text" id="mail" name="mail"
+                       size="10" placeholder="e-mail" pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
+                <input type="password" id="password" name="password" required
+                       size="10" placeholder="password" />
+                <button type="button">Log in</button>
+            </form>
+        </section>
+        <section>
+            <h3>Do you want to create an account?</h3>
+            <form>
+                <input type="text" id="name" name="name" required
+                       minlength="1" maxlength="50" size="10" placeholder="name" />
+                <input type="text" id="lastname" name="lastname" required
+                       minlength="1" maxlength="50" size="10" placeholder="lastname" />
+                <input type="email" id="newMail" name="newMail"
+                       minlength="11" maxlength="150" size="10" placeholder="e-mail" pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
+                <input type="password" id="newPassword" name="password" required
+                       minlength="1" maxlength="15" size="10" placeholder="password" />
+                <button type="button">Sign up</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
