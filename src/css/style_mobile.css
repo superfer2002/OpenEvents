@@ -1,0 +1,20 @@
+:root {
+    --footer-height: 50px;
+    --footer-padding: 10px;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    font-family: "Verdana", sans-serif;
+    line-height: 1.5em;
+}
+
+
+@media (max-width: 420px) {
+    p{
+        background-color: darkorange;
+    }
+}
