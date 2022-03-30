@@ -12,9 +12,45 @@ body {
     line-height: 1.5em;
 }
 
+a {
+    text-decoration: none;
+}
 
-@media (max-width: 420px) {
-    p{
+@media (max-device-width: 420px) {
+
+    html {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 8rem;
+    }
+
+    .flex_header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #1f9898;
+        color: white;
+        padding-bottom: 3rem;
+    }
+
+    .flex_header div nav a {
+        padding: 2rem;
+    }
+
+    .flex_header div nav a img {
+        background: #a6d7d7;
+        border-radius: 80px;
+        padding: 10px;
+        width: 70px;
+    }
+
+    p {
         background-color: darkorange;
     }
 }

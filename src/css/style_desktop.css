@@ -1,5 +1,43 @@
-@media (min-width: 421px) {
-    p{
+@media (min-device-width: 421px) {
+
+    html {
+        font-size: 5px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 8rem;
+    }
+
+    .margins {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .flex_header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #1f9898;
+        color: white;
+        justify-content: space-between;
+    }
+
+    .flex_header div nav a {
+        padding: 1.5rem;
+    }
+
+    .flex_header div nav a img {
+        background: #a6d7d7;
+        border-radius: 80px;
+        padding: 5px;
+        width: 25px;
+    }
+
+    p {
         background-color: blue;
     }
 }
