@@ -5,7 +5,7 @@
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 6rem;
     }
 
     h2 {
@@ -56,20 +56,23 @@
         border-radius: 9px;
     }
 
-    .flex_index {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .flex_login div{
+    .flex_login form, article{
         display: flex;
         flex-direction: column;
         align-items: center;
         wrap-option: wrap;
     }
 
-    .flex_signup {
+    .backgroundImg{
+        background-image: url("../media/images/purple_background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 70px;
+        padding-top: 30px;
+    }
+
+    .flex_signup form{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -78,34 +81,66 @@
 
     .input_box {
         font-size: 3rem;
-        margin: 2rem;
+        margin-bottom: 3rem;
         width: 30rem;
+        box-shadow:5px 5px 10px rgba(48, 68, 94, 0.35);
+        border-radius: 20px;
     }
 
-    .buttons {
-        background: #5E5DF0;
+    input[type=text] {
+        padding-left: 20px;
+    }
+
+    input[type=email] {
+        padding-left: 20px;
+    }
+
+    input[type=password] {
+        padding-left: 20px;
+    }
+
+    .buttonLogIn {
+        background: #0d213a;
         border-radius: 999px;
-        box-shadow: #5E5DF0 0 10px 20px -10px;
+        box-shadow: #0d213a 0 10px 20px -10px;
         box-sizing: border-box;
-        color: #FFFFFF;
-        cursor: pointer;
-        font-size: 3rem;
+        color: #E8EEFFFF;
+        font-size: 2.5rem;
         font-weight: 700;
         line-height: 4rem;
         opacity: 1;
         outline: 0 solid transparent;
-        padding: 8px 18px;
+        padding: 15px 25px;
         user-select: none;
-        -webkit-user-select: none;
         touch-action: manipulation;
-        width: fit-content;
-        word-break: break-word;
         border: 0;
     }
 
-    .buttons:hover {
-        background: #FFFFFF;
-        color: #5E5DF0;
+    .buttonLogIn:hover {
+        background: #E8EEFFFF;
+        color: #0d213a;
+    }
+
+    .buttonSignUp {
+        background: rgb(168, 190, 218);
+        border-radius: 999px;
+        box-shadow: rgb(168, 190, 218) 0 10px 20px -10px;
+        box-sizing: border-box;
+        color: #15263a;
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 4rem;
+        opacity: 1;
+        outline: 0 solid transparent;
+        padding: 15px 25px;
+        user-select: none;
+        touch-action: manipulation;
+        border: 0;
+    }
+
+    .buttonSignUp:hover {
+        background: rgb(21, 38, 58);
+        color: rgb(168, 190, 218);
     }
 
     footer {

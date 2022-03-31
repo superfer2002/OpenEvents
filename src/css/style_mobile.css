@@ -13,16 +13,16 @@ body {
     line-height: 1.5em;
 }
 
+#mainTitle {
+    color: #bfdafa;
+    text-shadow: 5px 5px 2px #395c8a, 10px 10px 3px #19457e, 35px 23px 12px #0d213a;
+}
+
 main {
     padding: 10px;
     min-height: calc(
             100vh - 20px - 120px - var(--footer-padding) * 2 - var(--footer-height)
     );
-}
-
-#mainTitle {
-    color: #bfdafa;
-    text-shadow: 5px 5px 2px #395c8a, 10px 10px 3px #19457e, 35px 23px 12px #0d213a;
 }
 
 a {
