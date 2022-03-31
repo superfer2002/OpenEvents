@@ -12,6 +12,18 @@ body {
     line-height: 1.5em;
 }
 
+main {
+    padding: 10px;
+    min-height: calc(
+            100vh - 20px - 120px - var(--footer-padding) * 2 - var(--footer-height)
+    );
+}
+
+#title {
+    font-family: "Inter", sans-serif;
+    text-shadow: 5px 10px 2px #ff0000, -3px 6px 5px #0000ff;
+}
+
 a {
     color: white;
     text-decoration: none;
