@@ -20,8 +20,8 @@ main {
 }
 
 #title {
-    font-family: "Inter", sans-serif;
-    text-shadow: 5px 10px 2px #ff0000, -3px 6px 5px #0000ff;
+    color: #bfdafa;
+    text-shadow: 5px 5px 2px #395c8a, 10px 10px 3px #19457e, 35px 23px 12px #0d213a;
 }
 
 a {
@@ -51,8 +51,7 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #1f9898;
-        color: white;
+        background-color: rgb(21, 54, 96);
         padding-bottom: 3rem;
     }
 
@@ -61,10 +60,14 @@ a {
     }
 
     .flex_header div nav a img {
-        background: #a6d7d7;
+        background: #bfdafa;
         border-radius: 80px;
         padding: 10px;
         width: 70px;
+    }
+
+    .flex_header div nav a img:hover {
+        border-radius: 100px;
     }
 
     .flex_index {
@@ -73,14 +76,22 @@ a {
         align-items: center;
     }
 
-    .flex_login {
+    .flex_login form{
         display: flex;
         flex-direction: column;
         align-items: center;
         wrap-option: wrap;
     }
 
-    .flex_signup {
+    .backgroundImg{
+        background-image: url("../media/images/index_bckg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+
+    .flex_signup form{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -99,12 +110,12 @@ a {
        box-shadow: #5E5DF0 0 10px 20px -10px;
        box-sizing: border-box;
        color: #FFFFFF;
-       font-size: 3rem;
+       font-size: 2.5rem;
        font-weight: 700;
        line-height: 4rem;
        opacity: 1;
        outline: 0 solid transparent;
-       padding: 8px 18px;
+       padding: 15px 25px;
        user-select: none;
        touch-action: manipulation;
        border: 0;
