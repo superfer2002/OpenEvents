@@ -178,7 +178,7 @@ a {
         align-items: center;
     }
 
-    .inlineNav div{
+    .inlineNav div {
         display: inline-block;
         margin-right: 4rem;
 
@@ -240,6 +240,10 @@ a {
 
     .profile_round {
         border-radius: 50rem;
+    }
+
+    .logout_profile {
+        color: darkred;
     }
 
 }
