@@ -259,4 +259,14 @@ a {
         width: 700px;
     }
 
+    .logout_profile {
+        color: darkred;
+    }
+
+    .logout_profile:hover {
+        text-decoration: underline;
+        text-decoration-color: darkred;
+        background-color: #395c8a;
+    }
+
 }
