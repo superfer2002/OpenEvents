@@ -79,23 +79,17 @@
         wrap-option: wrap;
     }
 
-    .input_box {
+    .input_box input{
         font-size: 3rem;
         margin-bottom: 3rem;
         width: 30rem;
         box-shadow:5px 5px 10px rgba(48, 68, 94, 0.35);
-        border-radius: 20px;
-    }
-
-    input[type=text] {
+        border-radius: 10px;
         padding-left: 20px;
     }
 
-    input[type=email] {
-        padding-left: 20px;
-    }
 
-    input[type=password] {
+    .indexInput {
         padding-left: 20px;
     }
 
