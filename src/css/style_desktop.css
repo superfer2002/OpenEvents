@@ -62,7 +62,7 @@
         align-items: center;
     }
 
-    .flex_login {
+    .flex_login div{
         display: flex;
         flex-direction: column;
         align-items: center;

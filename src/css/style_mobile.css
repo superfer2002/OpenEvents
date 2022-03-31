@@ -8,7 +8,8 @@ body {
 }
 
 * {
-    font-family: "Verdana", sans-serif;
+    font-family: "Candara Light", sans-serif;
+    font-weight: bold;
     line-height: 1.5em;
 }
 
@@ -19,7 +20,7 @@ main {
     );
 }
 
-#title {
+#mainTitle {
     color: #bfdafa;
     text-shadow: 5px 5px 2px #395c8a, 10px 10px 3px #19457e, 35px 23px 12px #0d213a;
 }
@@ -80,13 +81,7 @@ a {
         border-radius: 100px;
     }
 
-    .flex_index {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .flex_login form{
+    .flex_login form, article{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -94,11 +89,12 @@ a {
     }
 
     .backgroundImg{
-        background-image: url("../media/images/index_bckg.jpg");
+        background-image: url("../media/images/purple_background.jpg");
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        padding-top: 15px;
-        padding-bottom: 30px;
+        padding-bottom: 70px;
+        padding-top: 50px;
     }
 
     .flex_signup form{
@@ -112,14 +108,28 @@ a {
         font-size: 3rem;
         margin-bottom: 3rem;
         width: 30rem;
+        box-shadow:5px 5px 10px rgba(48, 68, 94, 0.35);
+        border-radius: 20px;
     }
 
-    .buttons {
-       background: #5E5DF0;
+    input[type=text] {
+        padding-left: 20px;
+    }
+
+    input[type=email] {
+        padding-left: 20px;
+    }
+
+    input[type=password] {
+        padding-left: 20px;
+    }
+
+    .buttonLogIn {
+       background: #0d213a;
        border-radius: 999px;
-       box-shadow: #5E5DF0 0 10px 20px -10px;
+       box-shadow: #0d213a 0 10px 20px -10px;
        box-sizing: border-box;
-       color: #FFFFFF;
+       color: #E8EEFFFF;
        font-size: 2.5rem;
        font-weight: 700;
        line-height: 4rem;
@@ -131,9 +141,31 @@ a {
        border: 0;
     }
 
-    .buttons:hover {
-        background: #FFFFFF;
-        color: #5E5DF0;
+    .buttonLogIn:hover {
+        background: #E8EEFFFF;
+        color: #0d213a;
+    }
+
+    .buttonSignUp {
+        background: rgb(168, 190, 218);
+        border-radius: 999px;
+        box-shadow: rgb(168, 190, 218) 0 10px 20px -10px;
+        box-sizing: border-box;
+        color: #15263a;
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 4rem;
+        opacity: 1;
+        outline: 0 solid transparent;
+        padding: 15px 25px;
+        user-select: none;
+        touch-action: manipulation;
+        border: 0;
+    }
+
+    .buttonSignUp:hover {
+        background: rgb(21, 38, 58);
+        color: rgb(168, 190, 218);
     }
 
     footer {
