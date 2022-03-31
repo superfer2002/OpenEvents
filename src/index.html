@@ -16,10 +16,10 @@
                 <h1 id="mainTitle">OpenEvents</h1>
             </article>
             <article class="flex_login">
-                <form>
-                    <input class="input_box" type="email" id="mail" name="mail"
+                <form class="indexInput, input_box">
+                    <input type="email" id="mail" name="mail"
                            size="10" placeholder="e-mail" pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
-                    <input class="input_box" type="password" id="password" name="password" required
+                    <input type="password" id="password" name="password" required
                            size="10" placeholder="password" />
                     <button class="buttonLogIn" type="button" onclick="window.location.href='./home.html'">Log in</button>
                 </form>
@@ -30,14 +30,14 @@
                 <h3>Do you want to create an account?</h3>
             </article>
             <article class="flex_signup">
-                <form>
-                    <input class="input_box" type="text" id="name" name="name" required
+                <form class="indexInput, input_box">
+                    <input type="text" id="name" name="name" required
                            minlength="1" maxlength="50" size="10" placeholder="name" />
-                    <input class="input_box" type="text" id="lastname" name="lastname" required
+                    <input type="text" id="lastname" name="lastname" required
                            minlength="1" maxlength="50" size="10" placeholder="lastname" />
-                    <input class="input_box" type="email" id="newMail" name="newMail"
+                    <input type="email" id="newMail" name="newMail"
                            minlength="11" maxlength="150" size="10" placeholder="e-mail" pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
-                    <input class="input_box" type="password" id="newPassword" name="password" required
+                    <input type="password" id="newPassword" name="password" required
                            minlength="1" maxlength="15" size="10" placeholder="password" />
                     <button class="buttonSignUp" type="button" onclick="window.location.href='./home.html'">Sign up</button>
                 </form>
