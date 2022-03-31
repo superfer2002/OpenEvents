@@ -169,7 +169,53 @@
 
     .inlineNav a:hover{
         text-decoration: underline;
-        text-decoration-color: #0c2341;
+        text-decoration-color: #338f8f;
+    }
+
+    .bkgFriends {
+        background-image: url("../media/images/friends_bkg.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 70px;
+        padding-top: 50px;
+        width: 900px;
+    }
+
+    .bkgEvents {
+        background-image: url("../media/images/events_bkg.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 70px;
+        padding-top: 50px;
+        width: 900px;
+    }
+
+    .friendsHome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #c6d6ea;
+        background: #0c2341;
+        max-width: 70rem;
+    }
+
+    .flex_home article {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .flex_bkg_home div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home_title {
+        margin-left: 96rem;
+        font-size: 5rem;
     }
 
 }

@@ -188,14 +188,58 @@ a {
         margin-left: 9rem;
     }
 
-    .inlineNav a{
+    .inlineNav a {
         color: lightgray;
         text-decoration: none;
     }
 
-    .inlineNav a:hover{
+    .inlineNav a:hover {
         text-decoration: underline;
-        text-decoration-color: #0c2341;
+        text-decoration-color: #338f8f;
+    }
+
+    .friendsHome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #c6d6ea;
+        background: #0c2341;
+        max-width: content-box;
+    }
+
+    .bkgFriends {
+        background-image: url("../media/images/friends_bkg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 70px;
+        padding-top: 50px;
+        width: 900px;
+        margin-bottom: 3rem;
+    }
+
+    .bkgEvents {
+        background-image: url("../media/images/events_bkg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 70px;
+        padding-top: 50px;
+        width: 900px;
+    }
+
+    .flex_home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home_title {
+        font-size: 5rem;
+    }
+
+    .profile_round {
+        border-radius: 50rem;
     }
 
 }
