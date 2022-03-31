@@ -15,31 +15,31 @@
             <article class="flex_login">
                 <h1>OpenEvents</h1>
             </article>
-            <article>
+            <article class="flex_login">
                 <form>
-                    <input class="flex_login" type="text" id="mail" name="mail"
+                    <input class="flex_login input_box" type="text" id="mail" name="mail"
                            size="10" placeholder="e-mail" pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
-                    <input class="flex_login" type="password" id="password" name="password" required
+                    <input class="flex_login input_box" type="password" id="password" name="password" required
                            size="10" placeholder="password" />
-                    <button class="flex_login" type="button">Log in</button>
+                    <button class="flex_login buttons" type="button" onclick="window.location.href='./home.html'">Log in</button>
                 </form>
             </article>
         </section>
-        <section class="flex_signup">
-            <article>
+        <section>
+            <article class="flex_signup">
                 <h3>Do you want to create an account?</h3>
             </article>
-            <article>
+            <article class="flex_signup">
                 <form>
-                    <input type="text" id="name" name="name" required
+                    <input class="flex_signup input_box" type="text" id="name" name="name" required
                            minlength="1" maxlength="50" size="10" placeholder="name" />
-                    <input type="text" id="lastname" name="lastname" required
+                    <input class="flex_signup input_box" type="text" id="lastname" name="lastname" required
                            minlength="1" maxlength="50" size="10" placeholder="lastname" />
-                    <input type="email" id="newMail" name="newMail"
+                    <input class="flex_signup input_box" type="email" id="newMail" name="newMail"
                            minlength="11" maxlength="150" size="10" placeholder="e-mail" pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
-                    <input type="password" id="newPassword" name="password" required
+                    <input class="flex_signup input_box" type="password" id="newPassword" name="password" required
                            minlength="1" maxlength="15" size="10" placeholder="password" />
-                    <button type="button">Sign up</button>
+                    <button class="flex_signup buttons" type="button" onclick="window.location.href='./home.html'">Sign up</button>
                 </form>
             </article>
         </section>
