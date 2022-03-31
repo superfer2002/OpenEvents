@@ -10,30 +10,38 @@
     <!--360 x 740 (Samsung s8+) -->
 </head>
 <body>
-    <main>
-        <h1>OpenEvents</h1>
+    <main class="flex_index">
         <section>
-            <form>
-                <input type="text" id="mail" name="mail"
-                       size="10" placeholder="e-mail" pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
-                <input type="password" id="password" name="password" required
-                       size="10" placeholder="password" />
-                <button type="button">Log in</button>
-            </form>
+            <article class="flex_login">
+                <h1>OpenEvents</h1>
+            </article>
+            <article>
+                <form>
+                    <input class="flex_login" type="text" id="mail" name="mail"
+                           size="10" placeholder="e-mail" pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
+                    <input class="flex_login" type="password" id="password" name="password" required
+                           size="10" placeholder="password" />
+                    <button class="flex_login" type="button">Log in</button>
+                </form>
+            </article>
         </section>
-        <section>
-            <h3>Do you want to create an account?</h3>
-            <form>
-                <input type="text" id="name" name="name" required
-                       minlength="1" maxlength="50" size="10" placeholder="name" />
-                <input type="text" id="lastname" name="lastname" required
-                       minlength="1" maxlength="50" size="10" placeholder="lastname" />
-                <input type="email" id="newMail" name="newMail"
-                       minlength="11" maxlength="150" size="10" placeholder="e-mail" pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
-                <input type="password" id="newPassword" name="password" required
-                       minlength="1" maxlength="15" size="10" placeholder="password" />
-                <button type="button">Sign up</button>
-            </form>
+        <section class="flex_signup">
+            <article>
+                <h3>Do you want to create an account?</h3>
+            </article>
+            <article>
+                <form>
+                    <input type="text" id="name" name="name" required
+                           minlength="1" maxlength="50" size="10" placeholder="name" />
+                    <input type="text" id="lastname" name="lastname" required
+                           minlength="1" maxlength="50" size="10" placeholder="lastname" />
+                    <input type="email" id="newMail" name="newMail"
+                           minlength="11" maxlength="150" size="10" placeholder="e-mail" pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
+                    <input type="password" id="newPassword" name="password" required
+                           minlength="1" maxlength="15" size="10" placeholder="password" />
+                    <button type="button">Sign up</button>
+                </form>
+            </article>
         </section>
     </main>
 </body>

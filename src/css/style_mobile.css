@@ -13,6 +13,7 @@ body {
 }
 
 a {
+    color: white;
     text-decoration: none;
 }
 
@@ -50,7 +51,21 @@ a {
         width: 70px;
     }
 
-    p {
-        background-color: darkorange;
+    .flex_index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .flex_login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        wrap-option: wrap;
+    }
+
+    .flex_signup {
+        display: flex;
+    }
+
 }
