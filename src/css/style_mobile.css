@@ -21,13 +21,21 @@ body {
 main {
     padding: 10px;
     min-height: calc(
-            100vh - 20px - 120px - var(--footer-padding) * 2 - var(--footer-height)
+            80vh - 20px - 120px - var(--footer-padding) * 2 - var(--footer-height)
     );
 }
 
 a {
     color: white;
     text-decoration: none;
+}
+
+#white{
+    color: white;
+}
+
+#black{
+    color: black;
 }
 
 @media (max-device-width: 420px) {
@@ -60,7 +68,6 @@ a {
 
     h5 {
         font-size: 1.5rem;
-        color: white;
     }
 
     .flex_header {
@@ -257,6 +264,12 @@ a {
 
     .searchBox:focus {
         width: 700px;
+    }
+
+    .searchImage {
+        width: 90%;
+        height: auto;
+
     }
 
 }
