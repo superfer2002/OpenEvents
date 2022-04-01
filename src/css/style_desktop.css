@@ -212,4 +212,27 @@
         font-size: 5rem;
     }
 
+    .searchBox:focus {
+        width: 700px;
+    }
+
+    .logout_profile {
+        color: darkred;
+        padding: 1rem;
+    }
+
+    .logout_profile:hover {
+        color: whitesmoke;
+        background-color: darkred;
+        padding: 1rem;
+        border-radius: 50rem;
+    }
+
+    .profile_round {
+        border-radius: 50rem;
+        width: 25rem;
+    }
+
+
+
 }
