@@ -1,4 +1,10 @@
 @media (min-device-width: 421px) {
+    main {
+        padding: 10px;
+        min-height: calc(
+                100vh - 20px - 120px - var(--footer-padding) * 2 - var(--footer-height)
+        );
+    }
 
     html {
         font-size: 5px;
@@ -17,13 +23,11 @@
     }
 
     h4 {
-        font-size: 2rem;
-        color: white;
+        font-size: 3rem;
     }
 
     h5 {
         font-size: 1.5rem;
-        color: white;
     }
 
     .margins {
@@ -231,6 +235,31 @@
     .profile_round {
         border-radius: 50rem;
         width: 25rem;
+    }
+
+    .searchBox {
+        margin-top: 25px;
+        width: 500px;
+        box-sizing: border-box;
+        border: 1px solid #395c8a;
+        border-radius: 4px;
+        background-color: white;
+        background-image: url('../media/images/icons/search_icon.png');
+        background-position: 2px;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        padding: 15px 20px 15px 40px;
+        transition: width 0.5s ease-in-out;
+        font-size: 2.2rem;
+    }
+
+    .searchBox:focus {
+        width: 600px;
+    }
+
+    .searchImage {
+        width: 50%;
+        height: auto;
     }
 
 
