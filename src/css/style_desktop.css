@@ -6,6 +6,13 @@
         );
     }
 
+    main {
+        padding: 10px;
+        min-height: calc(
+                100vh - 20px - 120px - var(--footer-padding) * 2 - var(--footer-height)
+        );
+    }
+
     html {
         font-size: 5px;
     }
@@ -92,6 +99,16 @@
         padding-left: 20px;
     }
 
+    .div_inline {
+        display: inline-block;
+        padding: 20px;
+    }
+
+    .flex_profile {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
 
     .indexInput {
         padding-left: 20px;
@@ -263,5 +280,34 @@
     }
 
 
+    .flex_profile_info {
+        width: 70rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .profile_info_theme h3 {
+        padding: 1.2rem;
+    }
+
+    .profile_info_theme_input h3 {
+        color: #0c2341;
+        border: solid 0.2rem #5b5a5a;
+        padding: 1rem;
+        border-radius: 1rem;
+        font-weight: lighter;
+    }
+
+    .done_profile {
+        color: darkred;
+        padding: 1rem;
+    }
+
+    .done_profile:hover {
+        color: whitesmoke;
+        background-color: darkred;
+        border-radius: 5rem;
+    }
 
 }
