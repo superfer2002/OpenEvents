@@ -326,5 +326,75 @@ a {
         color: black;
     }
 
+    .edit_profile_img {
+        width: 3rem;
+    }
 
+    .done_profile {
+        padding: 1rem;
+        color: whitesmoke;
+        background-color: darkgreen;
+        border-radius: 5rem;
+    }
+
+    .done_profile:hover {
+        color: darkgreen;
+        background-color: whitesmoke;
+    }
+
+    .flex_edit_buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-left: 22rem;
+    }
+
+    .star-container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .star:before {
+        content: "\f005";
+        font-family: fontAwesome;
+        font-size: 60px;
+        position: relative;
+        display: block;
+        color: #aaa;
+    }
+
+    .star:after {
+        content: "\f005";
+        font-family: fontAwesome;
+        position: absolute;
+        top: 7px;
+        font-size: 60px;
+        color: gold;
+        opacity: 0;
+    }
+
+    .star:hover:after,
+    .star:hover ~ .star:after,
+    .star.star__checked:after,
+    .star.star__checked ~ .star:after{
+        opacity: 1;
+    }
+
+    .users_profile {
+        font-size: 5rem;
+        color: #0c2341;
+    }
+
+    .delete_profile {
+        padding: 2rem;
+        color: whitesmoke;
+        background-color: darkred;
+        border-radius: 5rem;
+    }
+
+    .delete_profile:hover {
+        background-color: whitesmoke;
+        color: darkred;
+
+    }
 }

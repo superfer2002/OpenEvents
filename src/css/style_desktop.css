@@ -310,4 +310,19 @@
         border-radius: 5rem;
     }
 
+    .flex_edit_buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-left: 18rem;
+    }
+
+    .edit_profile_link {
+        color: black;
+    }
+
+    .edit_profile_img {
+        width: 5rem;
+    }
+
 }
