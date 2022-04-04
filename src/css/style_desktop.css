@@ -46,7 +46,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        background-color: rgb(21, 54, 96);
+        background-color: rgb(1, 25, 54);
         justify-content: space-between;
     }
 
@@ -55,7 +55,7 @@
     }
 
     .flex_header div nav a img {
-        background: #bfdafa;
+        background: rgb(217, 231, 253);
         border-radius: 80px;
         padding: 5px;
         width: 25px;
@@ -154,12 +154,12 @@
     }
 
     .buttonSignUp:hover {
-        background: rgb(21, 38, 58);
+        background: rgb(1, 25, 54);
         color: rgb(168, 190, 218);
     }
 
     footer {
-        background: #0c2341;
+        background: #011936;
     }
 
     .flex_footer {
@@ -211,9 +211,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: #c6d6ea;
-        background: #0c2341;
+        color: rgb(208, 242, 255);
+        background: rgba(77, 76, 117, 0.82);
+        border-radius: 7px;
+        padding: 4px;
         max-width: 70rem;
+        transition: transform 250ms, opacity 400ms;
+    }
+
+    .friendsHome:hover{
+        transform: scale(1.2);
     }
 
     .flex_home article {
