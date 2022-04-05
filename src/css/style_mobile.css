@@ -68,6 +68,14 @@ a {
     opacity: 1;
 }
 
+.grey_background {
+    background-color: #9faab9;
+}
+
+.delete_questions article p {
+    font-size: 2.6rem;
+    font-weight: bold;
+}
 
 @media (max-device-width: 420px) {
 
@@ -105,6 +113,10 @@ a {
 
     h5 {
         font-size: 1.5rem;
+    }
+
+    h6 {
+        font-size: 5rem;
     }
 
     .flex_header {
@@ -408,7 +420,6 @@ a {
     .delete_profile:hover {
         background-color: whitesmoke;
         color: darkred;
-
     }
 
     .comments_profile {
@@ -425,14 +436,14 @@ a {
         width: 50rem;
     }
 
-    .events_general_flex article{
+    .events_general_flex article {
         display: flex;
         flex-direction: row;
         wrap-option: wrap;
         justify-content: center;
     }
 
-    .my_events_button a{
+    .my_events_button a {
         background: rgb(168, 190, 218);
         border-radius: 20px;
         box-shadow: rgb(136, 156, 180) 0 10px 30px -10px;
@@ -464,5 +475,28 @@ a {
     .terms_description {
         font-size: 0.8rem;
     }
+
+    .delete_profile_anyway {
+        padding: 2rem;
+        color: whitesmoke;
+        background-color: darkred;
+        border-radius: 2rem;
+    }
+
+    .delete_profile_anyway:hover {
+        font-size: 3rem;
+    }
+
+    .delete_cancel {
+        padding: 2rem;
+        background-color: whitesmoke;
+        color: darkred;
+        border-radius: 2rem;
+    }
+
+    .delete_cancel:hover {
+        font-size: 3rem;
+    }
+
 
 }

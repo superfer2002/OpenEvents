@@ -383,4 +383,30 @@
         font-size: 3rem;
     }
 
+    .delete_profile_anyway {
+        padding: 2rem;
+        color: whitesmoke;
+        background-color: darkred;
+        border-radius: 2rem;
+    }
+
+    .delete_profile_anyway:hover {
+        font-size: 4rem;
+    }
+
+    .delete_cancel {
+        padding: 2rem;
+        background-color: whitesmoke;
+        color: darkred;
+        border-radius: 2rem;
+    }
+
+    .delete_cancel:hover {
+        font-size: 4rem;
+    }
+
+
+
+
+
 }
