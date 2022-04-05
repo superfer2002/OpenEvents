@@ -37,6 +37,38 @@ a {
     margin-top: 20px;
 }
 
+.star-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.star:before {
+    content: "\f005";
+    font-family: fontAwesome;
+    font-size: 60px;
+    position: relative;
+    display: block;
+    color: #aaa;
+}
+
+.star:after {
+    content: "\f005";
+    font-family: fontAwesome;
+    position: absolute;
+    top: 7px;
+    font-size: 60px;
+    color: gold;
+    opacity: 0;
+}
+
+.star:hover:after,
+.star:hover ~ .star:after,
+.star.star__checked:after,
+.star.star__checked ~ .star:after{
+    opacity: 1;
+}
+
+
 @media (max-device-width: 420px) {
 
     main {
@@ -360,38 +392,8 @@ a {
         margin-left: 22rem;
     }
 
-    .star-container {
-        display: flex;
-        align-items: flex-start;
-    }
-
-    .star:before {
-        content: "\f005";
-        font-family: fontAwesome;
-        font-size: 60px;
-        position: relative;
-        display: block;
-        color: #aaa;
-    }
-
-    .star:after {
-        content: "\f005";
-        font-family: fontAwesome;
-        position: absolute;
-        top: 7px;
-        font-size: 60px;
-        color: gold;
-        opacity: 0;
-    }
-
-    .star:hover:after,
-    .star:hover ~ .star:after,
-    .star.star__checked:after,
-    .star.star__checked ~ .star:after{
-        opacity: 1;
-    }
-
     .users_profile {
+        line-height: 0;
         font-size: 5rem;
         color: #0c2341;
     }
@@ -407,6 +409,20 @@ a {
         background-color: whitesmoke;
         color: darkred;
 
+    }
+
+    .comments_profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+    }
+
+    .divisor_color {
+        padding-top: 1rem;
+        border-top: 3px solid #0d213a;
+        width: 50rem;
     }
 
     .events_general_flex article{
@@ -434,5 +450,19 @@ a {
 
     }
 
+    .terms_flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .terms_title {
+        width: 18rem;
+        font-weight: bold;
+    }
+
+    .terms_description {
+        font-size: 0.8rem;
+    }
 
 }

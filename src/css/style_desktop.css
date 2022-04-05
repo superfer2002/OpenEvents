@@ -101,7 +101,6 @@
 
     .div_inline {
         display: inline-block;
-        padding: 20px;
     }
 
     .flex_profile {
@@ -236,7 +235,6 @@
     }
 
     .home_title {
-        margin-left: 96rem;
         font-size: 5rem;
     }
 
@@ -307,21 +305,59 @@
     }
 
     .done_profile {
-        color: darkred;
         padding: 1rem;
+        color: whitesmoke;
+        background-color: darkgreen;
+        border-radius: 5rem;
     }
 
     .done_profile:hover {
+        color: darkgreen;
+        background-color: whitesmoke;
+    }
+
+    .comments_profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+    }
+
+    .divisor_color {
+        padding-top: 1rem;
+        border-top: 3px solid #0d213a;
+        width: 50rem;
+    }
+
+    .score_profile {
+        margin-bottom: 6rem;
+    }
+
+    .users_profile {
+        line-height: 0;
+        font-size: 6rem;
+        color: #0c2341;
+    }
+
+    .delete_profile {
+        padding: 2rem;
         color: whitesmoke;
         background-color: darkred;
         border-radius: 5rem;
     }
 
+    .delete_profile:hover {
+        background-color: whitesmoke;
+        color: darkred;
+
+    }
+
     .flex_edit_buttons {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        margin-left: 18rem;
+        align-items: end;
+        margin-left: 35rem;
     }
 
     .edit_profile_link {
