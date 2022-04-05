@@ -368,4 +368,19 @@
         width: 5rem;
     }
 
+    .terms_flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .terms_title {
+        width: 25rem;
+        font-weight: bold;
+    }
+
+    .terms_description {
+        font-size: 3rem;
+    }
+
 }
