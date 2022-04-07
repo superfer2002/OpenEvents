@@ -37,52 +37,12 @@ a {
     margin-top: 20px;
 }
 
-.star-container {
-    display: flex;
-    align-items: flex-start;
-}
-
-.star:before {
-    content: "\f005";
-    font-family: fontAwesome;
-    font-size: 60px;
-    position: relative;
-    display: block;
-    color: #aaa;
-}
-
-.star:after {
-    content: "\f005";
-    font-family: fontAwesome;
-    position: absolute;
-    top: 7px;
-    font-size: 60px;
-    color: gold;
-    opacity: 0;
-}
-
-.star:hover:after,
-.star:hover ~ .star:after,
-.star.star__checked:after,
-.star.star__checked ~ .star:after{
-    opacity: 1;
-}
-
-.grey_background {
-    background-color: #9faab9;
-}
-
-.delete_questions article p {
-    font-size: 2.6rem;
-    font-weight: bold;
-}
-
 @media (max-device-width: 420px) {
 
     main {
         padding: 10px;
         min-height: calc(
-                80vh - 20px - 120px - var(--footer-padding) * 2 - var(--footer-height)
+                90vh - 70px - 200px - var(--footer-padding) * 2 - var(--footer-height)
         );
     }
 
@@ -100,7 +60,7 @@ a {
     }
 
     h2 {
-        font-size: 8rem;
+        font-size: 5.5rem;
     }
 
     h3 {
@@ -113,10 +73,6 @@ a {
 
     h5 {
         font-size: 1.5rem;
-    }
-
-    h6 {
-        font-size: 5rem;
     }
 
     .flex_header {
@@ -404,8 +360,38 @@ a {
         margin-left: 22rem;
     }
 
+    .star-container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .star:before {
+        content: "\f005";
+        font-family: fontAwesome;
+        font-size: 60px;
+        position: relative;
+        display: block;
+        color: #aaa;
+    }
+
+    .star:after {
+        content: "\f005";
+        font-family: fontAwesome;
+        position: absolute;
+        top: 7px;
+        font-size: 60px;
+        color: gold;
+        opacity: 0;
+    }
+
+    .star:hover:after,
+    .star:hover ~ .star:after,
+    .star.star__checked:after,
+    .star.star__checked ~ .star:after{
+        opacity: 1;
+    }
+
     .users_profile {
-        line-height: 0;
         font-size: 5rem;
         color: #0c2341;
     }
@@ -420,6 +406,7 @@ a {
     .delete_profile:hover {
         background-color: whitesmoke;
         color: darkred;
+
     }
 
     .comments_profile {
@@ -436,14 +423,7 @@ a {
         width: 50rem;
     }
 
-    .events_general_flex article {
-        display: flex;
-        flex-direction: row;
-        wrap-option: wrap;
-        justify-content: center;
-    }
-
-    .my_events_button a {
+    .my_events_button a{
         background: rgb(168, 190, 218);
         border-radius: 20px;
         box-shadow: rgb(136, 156, 180) 0 10px 30px -10px;
@@ -457,46 +437,94 @@ a {
         border: 0;
     }
 
-    .categories_buttons{
-
+    .events_general_flex article, h2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px 10px;
     }
 
-    .terms_flex {
+    .my_events_button a{
+        font-size: 2.2rem;
+        color: white;
+        border-radius: 10px;
+        background: #3c5373;
+        padding: 25px 20px;
+        margin: 0 25px;
+    }
+
+    .categories_buttons a{
+        font-size: 2.2rem;
+        color: #3c5373;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: #3c5373;
+        padding: 20px 15px;
+        margin: 0 15px;
+    }
+
+    .categories_buttons a:hover{
+        background: #d9e7fd;
+        border-color: #d9e7fd;
+        color: #3c5373;
+    }
+
+    .filters article{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px 10px;
+    }
+
+    .show_categories{
+        font-size: 2.2rem;
+        color: #3c5373;
+        font-weight: bold;
+    }
+
+    .box_eventer{
+        line-height: 1rem;
+        color: #000000;
+        background-color: rgba(197, 209, 224, 0.86);
+        box-shadow: 5px 3px 20px rgba(60, 83, 115, 0.51);
+        border-radius: 8px;
+        padding: 5px 60px;
+        align-items: center;
+    }
+
+    .button_create_event{
+        line-height: 1rem;
+        color: white;
+        background-color: #011936;
+        border-radius: 8px;
+        padding: 30px 60px;
+    }
+
+    .box_eventer h5{
+        line-height: 0.2rem;
+    }
+
+    .events_list{
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .terms_title {
-        width: 18rem;
-        font-weight: bold;
+    .events_details{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
-    .terms_description {
-        font-size: 0.8rem;
+    .events_list ul, ul li{
+        list-style: none;
+        font-size: 2rem;
+        padding-bottom: 20px;
     }
 
-    .delete_profile_anyway {
-        padding: 2rem;
-        color: whitesmoke;
-        background-color: darkred;
-        border-radius: 2rem;
-    }
 
-    .delete_profile_anyway:hover {
-        font-size: 3rem;
-    }
 
-    .delete_cancel {
-        padding: 2rem;
-        background-color: whitesmoke;
-        color: darkred;
-        border-radius: 2rem;
-    }
-
-    .delete_cancel:hover {
-        font-size: 3rem;
-    }
 
 
 }
