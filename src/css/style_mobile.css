@@ -37,6 +37,45 @@ a {
     margin-top: 20px;
 }
 
+.friends_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.friends_profile_img {
+    border-radius: 10rem;
+    width: 10rem;
+    padding-right: 2rem;
+}
+
+.friends_flex_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top_padding {
+    padding-top: 5rem;
+}
+
+.friend_add {
+    padding: 2rem;
+    background-color: #8046A887;
+    color: black;
+    border-radius: 2rem;
+}
+
+.friend_add:hover {
+    background-color: whitesmoke;
+    color: #8046A887;
+
+}
+
+.bold {
+    font-weight: bold;
+}
+
 @media (max-device-width: 420px) {
 
     main {
@@ -305,7 +344,6 @@ a {
 
     .div_inline {
         display: inline-block;
-        padding: 20px;
     }
 
     .flex_profile {
@@ -522,6 +560,62 @@ a {
         font-size: 2rem;
         padding-bottom: 20px;
     }
+
+    .flex_event {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rc_bkg {
+        background-image: url("../media/images/events/roller_coaster_event.jpg");
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 70px;
+        padding-top: 50px;
+        width: 960px;
+        margin-bottom: 2rem;
+    }
+
+    .event_title {
+        font-size: 5rem;
+        background-color: rgba(57, 92, 138, 0.77);
+        border-radius: 2rem;
+        padding: 1rem;
+    }
+
+    .flex_details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .details_icons {
+        width: 5rem;
+    }
+
+    .event_buttons a {
+        font-size: 3rem;
+        padding: 1rem;
+        background: #395c8a;
+        color: white;
+        border-radius: 2rem;
+        margin-right: 4rem;
+    }
+
+    .event_buttons a:hover {
+        background: white;
+        color: #395c8a;
+    }
+
+    .bottom_margin {
+        margin-bottom: 2rem;
+    }
+
+    .event_buttons_margin div {
+        margin: 3rem;
+    }
+
 
 
 

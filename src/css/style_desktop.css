@@ -193,7 +193,7 @@
         background-position: center;
         padding-bottom: 70px;
         padding-top: 50px;
-        width: 900px;
+        width: 300px;
     }
 
     .bkgEvents {
@@ -203,7 +203,7 @@
         background-position: center;
         padding-bottom: 70px;
         padding-top: 50px;
-        width: 900px;
+        width: 290px;
     }
 
     .friendsHome {
@@ -222,19 +222,22 @@
         transform: scale(1.2);
     }
 
-    .flex_home article {
+    .flex_home div  {
         display: flex;
         flex-direction: row;
         align-items: center;
     }
 
-    .flex_bkg_home div {
+    .flex_bkg_home div a {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .home_title {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
         font-size: 5rem;
     }
 
@@ -405,8 +408,8 @@
         font-size: 4rem;
     }
 
-
-
-
+    .top_padding {
+        padding-top: 5rem;
+    }
 
 }
