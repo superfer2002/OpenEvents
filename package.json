@@ -4,8 +4,9 @@
   "description": "OpenEvents allows you to interact with events and members of a community.",
   "main": "app.js",
   "scripts": {
-    "prestart": "rm -r dist/media && cp -r ./src/media ./dist/media && npm run html-minifier && npm run css-minifier",
+    "build": "rm -r dist/media && cp -r ./src/media ./dist/media && npm run html-minifier && npm run css-minifier",
     "start": "node app.js",
+    "watch": "nodemon",
     "html-minifier": "html-minifier --input-dir src --output-dir dist --file-ext html --remove-comments --collapse-whitespace --minify-js true --minify-css true",
     "css-minifier": "html-minifier --input-dir src --output-dir dist --file-ext css --remove-comments --collapse-whitespace --minify-js true --minify-css true"
   },
