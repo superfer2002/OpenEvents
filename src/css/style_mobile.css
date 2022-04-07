@@ -476,6 +476,8 @@ a {
     }
 
     .events_general_flex article, h2{
+        margin-top: 5px;
+        margin-bottom: 15px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -498,13 +500,13 @@ a {
         border-style: solid;
         border-color: #3c5373;
         padding: 20px 15px;
-        margin: 0 15px;
+        margin: 0 10px;
     }
 
     .categories_buttons a:hover{
-        background: #d9e7fd;
-        border-color: #d9e7fd;
-        color: #3c5373;
+        background: rgba(152, 111, 180, 0.53);
+        border-color: rgba(152, 111, 180, 0.53);
+        color: #4a2465;
     }
 
     .filters article{
@@ -515,8 +517,10 @@ a {
     }
 
     .show_categories{
+        margin-top: 0;
+        margin-bottom: 20px;
         font-size: 2.2rem;
-        color: #3c5373;
+        color: rgba(76, 41, 101, 0.73);
         font-weight: bold;
     }
 
@@ -527,6 +531,7 @@ a {
         box-shadow: 5px 3px 20px rgba(60, 83, 115, 0.51);
         border-radius: 8px;
         padding: 5px 60px;
+        margin: 15px 0;
         align-items: center;
     }
 
@@ -542,23 +547,43 @@ a {
         line-height: 0.2rem;
     }
 
-    .events_list{
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .events_details{
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
 
+    .img_events{
+        border-radius: 8px;
+        width: 500px;
+    }
+
+    .event_title_box{
+        background-color: rgba(128, 70, 168, 0.32);
+        margin-top: 0;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        padding: 30px 70px;
+    }
+
+    .events_list a{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+    }
+
     .events_list ul, ul li{
+        margin-top: 0;
+        margin-bottom: 0;
         list-style: none;
         font-size: 2rem;
         padding-bottom: 20px;
+    }
+
+    .events_list ul li img{
+        width: 60px;
     }
 
     .flex_event {
