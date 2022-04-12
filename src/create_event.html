@@ -56,7 +56,7 @@
     <main>
         <section class="margins">
             <article class="create_event_form">
-                <h2>Create an event</h2>
+                <h2 class="home_title">Create an event</h2>
                 <form>
                     <label for="image">Select a picture for the event:</label>
                     <input type="file" id="image" name="event_image" accept="image/png, image/jpeg">
@@ -70,8 +70,8 @@
                     <label for="participants">Max. participants:</label>
                     <input type="number" id="participants" name="participants" min="1" placeholder="participants">
 
-                    <label for="category">Choose category:</label>
-                    <select id="category" name="category">
+                    <label for="category">Choose a category:</label>
+                    <select class="create_event_select" id="category" name="category">
                         <option value="0">Category</option>
                         <option value="1">Music</option>
                         <option value="2">Education</option>
@@ -81,22 +81,19 @@
                         <option value="6">Other</option>
                     </select>
 
-                    <div>
-                        <label for="description">Describe your event:</label>
-                        <textarea rows="6" cols="25" id="description" name="description" placeholder="Describe your event..."></textarea>
-                    </div>
-                    <div>
-                        <label for="start_date">Starting date:</label>
-                        <input type="date" id="start_date" name="event_start" value="Today" min="2022-04-01">
-
-                        <label for="end_date">Ending date:</label>
-                        <input type="date" id="end_date" name="event_end" min="2022-04-01">
+                    <div class="create_event_textarea">
+                        <label for="description">Give your event a description:</label>
+                        <textarea rows="6" cols="40" id="description" name="description" placeholder="Describe your event..."></textarea>
                     </div>
 
-                    <div>
-                        <label for="start_time">Starting hour:</label> <input type="time" id="start_time" name="start_time">
-                        <label for="end_time">Ending hour:</label> <input type="time" id="end_time" name="end_time">
-                    </div>
+                    <label for="start_date">Starting date:</label>
+                    <input type="date" id="start_date" name="event_start" value="Today" min="2022-04-01">
+
+                    <label for="end_date">Ending date:</label>
+                    <input type="date" id="end_date" name="event_end" min="2022-04-01">
+
+                    <label for="start_time">Starting hour:</label> <input type="time" id="start_time" name="start_time">
+                    <label for="end_time">Ending hour:</label> <input type="time" id="end_time" name="end_time">
 
                 </form>
                 <button class="button_event_creation" type="button" onclick="window.location.href='./home.html'">CREATE IT!</button>
@@ -110,8 +107,8 @@
             </div>
             <div>
                 <nav>
-                    <div><a href="./terms.html"><h5>Terms of use</h5></a></div>
-                    <div><a href="./privacy.html"><h5>Privacy Policy</h5></a></div>
+                    <div><a href="./terms.html"><h5 class="white">Terms of use</h5></a></div>
+                    <div><a href="./privacy.html"><h5 class="white">Privacy Policy</h5></a></div>
                 </nav>
             </div>
         </section>

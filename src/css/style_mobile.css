@@ -76,6 +76,52 @@ a {
     font-weight: bold;
 }
 
+.create_event_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.3rem;
+}
+
+.create_event_form form label {
+    font-weight: bold;
+}
+
+.create_event_form form input, form div textarea, form div input {
+    font-size: 2.3rem;
+    margin-bottom: 50px;
+}
+
+.create_event_form form div textarea{
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border-color: #9ba3da;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.create_event_form input, div input{
+    box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #9ba3da;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    height: 45px;
+}
+
+.create_event_textarea{
+    margin-top: 4rem;
+    align-items: flex-start;
+    horiz-align: center;
+}
+
 @media (max-device-width: 420px) {
 
     main {
@@ -167,11 +213,12 @@ a {
         box-shadow:5px 5px 10px rgba(48, 68, 94, 0.35);
         border-radius: 20px;
         padding-left: 25px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: none;
     }
 
-    .buttonLogIn {
+    .buttonLogIn{
        background: #0d213a;
        border-radius: 999px;
        box-shadow: #0d213a 0 10px 20px -10px;
@@ -193,7 +240,7 @@ a {
         color: #0d213a;
     }
 
-    .buttonSignUp {
+    .buttonSignUp{
         background: rgb(168, 190, 218);
         border-radius: 999px;
         box-shadow: rgb(136, 156, 180) 0 10px 30px -10px;
@@ -292,6 +339,7 @@ a {
 
     .home_title {
         font-size: 4.5rem;
+        align-items: center;
     }
 
     .profile_round {
@@ -454,9 +502,9 @@ a {
     }
 
     .my_events_button a{
-            background: rgb(168, 190, 218);
-            border-radius: 20px;
-            box-shadow: rgb(136, 156, 180) 0 10px 30px -10px;
+        background: rgb(168, 190, 218);
+        border-radius: 20px;
+        box-shadow: rgb(136, 156, 180) 0 10px 30px -10px;
         box-sizing: border-box;
         color: #15263a;
         font-size: 1rem;
@@ -657,43 +705,17 @@ a {
 
     }
 
-    .create_event_form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 2.3rem;
-    }
-
-    .create_event_form form label {
-        font-weight: bold;
-    }
-
-    .create_event_form form input, div textarea, div input {
-        font-size: 2.3rem;
-    }
-
-    .create_event_form form select option{
-        font-size: medium;
-    }
-
-    .create_event_form form div textarea{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 3rem;
-        margin-top: 1rem;
-    }
-
-    .create_event_form input, div input{
-        box-sizing: border-box;
-        outline: none;
-        display: block;
-        width: 100%;
-        padding: 7px;
+    .create_event_select {
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
         border: none;
-        border-bottom: 1px solid #ddd;
-        margin-top: 1rem;
-        margin-bottom: 3rem;
-        height: 45px;
+        color: #fff;
+        background: rgba(46, 50, 93, 0.89);
+        text-align: left;
+        padding: 0 15px;
+        font-size: 2rem;
+        cursor: pointer;
     }
 
     .button_event_creation{
@@ -721,5 +743,6 @@ a {
     .eventology_content {
         position: relative;
     }
+
 
 }
