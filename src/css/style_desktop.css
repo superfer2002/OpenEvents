@@ -104,6 +104,37 @@
         display: inline-block;
     }
 
+    .star-container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .star:before {
+        content: "\f005";
+        font-family: fontAwesome;
+        font-size: 60px;
+        position: relative;
+        display: block;
+        color: #aaa;
+    }
+
+    .star:after {
+        content: "\f005";
+        font-family: fontAwesome;
+        position: absolute;
+        top: 7px;
+        font-size: 60px;
+        color: gold;
+        opacity: 0;
+    }
+
+    .star:hover:after,
+    .star:hover ~ .star:after,
+    .star.star__checked:after,
+    .star.star__checked ~ .star:after{
+        opacity: 1;
+    }
+
     .flex_profile {
         display: flex;
         flex-direction: column;
@@ -246,23 +277,6 @@
         width: 700px;
     }
 
-    .logout_profile {
-        color: darkred;
-        padding: 1rem;
-    }
-
-    .logout_profile:hover {
-        color: whitesmoke;
-        background-color: darkred;
-        padding: 1rem;
-        border-radius: 50rem;
-    }
-
-    .profile_round {
-        border-radius: 50rem;
-        width: 25rem;
-    }
-
     .searchBox {
         margin-top: 25px;
         width: 500px;
@@ -288,9 +302,35 @@
         height: auto;
     }
 
+    .profile_round {
+        border-radius: 50rem;
+        width: 20rem;
+    }
+
+    .logout_profile {
+        color: darkred;
+        padding: 1rem;
+    }
+
+    .logout_profile:hover {
+        color: whitesmoke;
+        background-color: darkred;
+        padding: 1rem;
+        border-radius: 50rem;
+    }
+
+    .div_inline {
+        display: inline-block;
+    }
+
+    .flex_profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .flex_profile_info {
-        width: 70rem;
+        width: 50rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -305,7 +345,15 @@
         border: solid 0.2rem #5b5a5a;
         padding: 1rem;
         border-radius: 1rem;
-        font-weight: lighter;
+        font-weight: unset;
+    }
+
+    .edit_profile_link {
+        color: black;
+    }
+
+    .edit_profile_img {
+        width: 3rem;
     }
 
     .done_profile {
@@ -320,27 +368,47 @@
         background-color: whitesmoke;
     }
 
-    .comments_profile {
+    .flex_edit_buttons {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding-top: 6rem;
-        padding-bottom: 3rem;
+        align-items: flex-end;
+        margin-left: 22rem;
     }
 
-    .divisor_color {
-        padding-top: 1rem;
-        border-top: 3px solid #0d213a;
-        width: 50rem;
+    .star-container {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
     }
 
-    .score_profile {
-        margin-bottom: 6rem;
+    .star:before {
+        content: "\f005";
+        font-family: fontAwesome;
+        font-size: 30px;
+        position: relative;
+        display: block;
+        color: #aaa;
+    }
+
+    .star:after {
+        content: "\f005";
+        font-family: fontAwesome;
+        position: absolute;
+        top: 7px;
+        font-size: 30px;
+        color: gold;
+        opacity: 0;
+    }
+
+    .star:hover:after,
+    .star:hover ~ .star:after,
+    .star.star__checked:after,
+    .star.star__checked ~ .star:after{
+        opacity: 1;
     }
 
     .users_profile {
-        line-height: 0;
-        font-size: 6rem;
+        font-size: 5rem;
         color: #0c2341;
     }
 
@@ -357,19 +425,18 @@
 
     }
 
-    .flex_edit_buttons {
+    .comments_profile {
         display: flex;
         flex-direction: column;
-        align-items: end;
-        margin-left: 35rem;
+        align-items: center;
+        padding-top: 6rem;
+        padding-bottom: 3rem;
     }
 
-    .edit_profile_link {
-        color: black;
-    }
-
-    .edit_profile_img {
-        width: 5rem;
+    .divisor_color {
+        padding-top: 1rem;
+        border-top: 3px solid #0d213a;
+        width: 50rem;
     }
 
     .terms_flex {
@@ -535,6 +602,119 @@
 
     .events_details ul li img{
         width: 20px;
+    }
+
+    .flex_event article {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 15rem;
+    }
+
+    .rc_bkg {
+        background-image: url("../media/images/events/roller_coaster_event.jpg");
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 70px;
+        padding-top: 50px;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .event_title {
+        font-size: 5rem;
+        background-color: rgba(57, 92, 138, 0.94);
+        border-radius: 2rem;
+        padding: 1rem;
+    }
+
+    .event_subtitle {
+        display: flex;
+        flex-direction: column;
+        align-content: start;
+        font-size: 5rem;
+    }
+
+    .flex_details div{
+        display: flex;
+        flex-direction: row;
+        margin-right: 2rem;
+    }
+
+    .flex_details_2 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .details_icons {
+        width: 5rem;
+    }
+
+    .event_buttons a {
+        font-size: 4rem;
+        padding: 1.5rem;
+        background: white;
+        border: 2px solid #395C8AFF;
+        color: #395C8AFF;
+        border-radius: 2rem;
+    }
+
+    .event_buttons a:hover {
+        background: #395c8a;
+        color: white;
+    }
+
+    .event_buttons_participate a {
+        font-size: 4rem;
+        padding: 1.5rem;
+        background: #395c8a;
+        color: white;
+        border-radius: 2rem;
+    }
+
+    .event_buttons_participate a:hover {
+        background: white;
+        color: #395c8a;
+    }
+
+    .bottom_margin {
+        margin-bottom: 2rem;
+    }
+
+    .event_buttons_margin div {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-right: 20rem;
+        margin-left: 10rem;
+    }
+
+    .event_score_margin {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 10rem;
+    }
+
+    .event_description_size {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .flex_event_buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .flex_event_row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex_event_bkg div h3, div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 }

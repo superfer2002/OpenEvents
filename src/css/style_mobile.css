@@ -706,4 +706,20 @@ a {
         margin-bottom: 3rem;
     }
 
+    .time_line {
+        position: relative;
+    }
+
+    .vl {
+        border-left: 6px solid #9BA3DAFF;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+
+    }
+
+    .eventology_content {
+        position: relative;
+    }
+
 }
