@@ -661,11 +661,15 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 2rem;
+        font-size: 2.3rem;
+    }
+
+    .create_event_form form label {
+        font-weight: bold;
     }
 
     .create_event_form form input, div textarea, div input {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 
     .create_event_form form select option{
@@ -693,9 +697,9 @@ a {
     }
 
     .button_event_creation{
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: white;
-        background-color: #011936;
+        background-color: rgba(10, 7, 75, 0.81);
         border-radius: 30px;
         padding: 30px 60px;
         margin-top: 2rem;
