@@ -81,7 +81,7 @@ a {
     main {
         padding: 10px;
         min-height: calc(
-                90vh - 70px - 200px - var(--footer-padding) * 2 - var(--footer-height)
+                90vh - 50px - 200px - var(--footer-padding) * 2 - var(--footer-height)
         );
     }
 
@@ -99,7 +99,7 @@ a {
     }
 
     h2 {
-        font-size: 5.5rem;
+        font-size: 4.5rem;
     }
 
     h3 {
@@ -165,12 +165,10 @@ a {
         margin-bottom: 3rem;
         width: 30rem;
         box-shadow:5px 5px 10px rgba(48, 68, 94, 0.35);
-        border-radius: 10px;
-        padding-left: 20px;
-    }
-
-    .indexInput {
-        padding-left: 20px;
+        border-radius: 20px;
+        padding-left: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .buttonLogIn {
@@ -455,16 +453,10 @@ a {
         padding-bottom: 3rem;
     }
 
-    .divisor_color {
-        padding-top: 1rem;
-        border-top: 3px solid #0d213a;
-        width: 50rem;
-    }
-
     .my_events_button a{
-        background: rgb(168, 190, 218);
-        border-radius: 20px;
-        box-shadow: rgb(136, 156, 180) 0 10px 30px -10px;
+            background: rgb(168, 190, 218);
+            border-radius: 20px;
+            box-shadow: rgb(136, 156, 180) 0 10px 30px -10px;
         box-sizing: border-box;
         color: #15263a;
         font-size: 1rem;
@@ -475,32 +467,19 @@ a {
         border: 0;
     }
 
-    .events_general_flex article, h2{
-        margin-top: 5px;
-        margin-bottom: 15px;
+    .categories_buttons{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding: 20px 10px;
-    }
-
-    .my_events_button a{
-        font-size: 2.2rem;
-        color: white;
-        border-radius: 10px;
-        background: #3c5373;
-        padding: 25px 20px;
-        margin: 0 25px;
     }
 
     .categories_buttons a{
         font-size: 2.2rem;
         color: #3c5373;
         border-radius: 10px;
-        border-style: solid;
-        border-color: #3c5373;
+        border: 2px solid #3c5373;
         padding: 20px 15px;
-        margin: 0 10px;
+        margin: 20px 10px;
     }
 
     .categories_buttons a:hover{
@@ -509,19 +488,35 @@ a {
         color: #4a2465;
     }
 
-    .filters article{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 20px 10px;
+    .events_general_flex article, h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 40px 10px;
+}
+
+    .my_events_button a{
+        font-size: 2.2rem;
+        color: white;
+        border-radius: 10px;
+        background: #3c4773;
+        padding: 25px 20px;
+        margin: 0 25px;
     }
 
-    .show_categories{
-        margin-top: 0;
-        margin-bottom: 20px;
+    .filters a{
+        display: inline-block;
+        padding: 0 50px;
+        margin: 50px 0;
+    }
+
+    .show_categories {
+        margin-top: 10px;
         font-size: 2.2rem;
         color: rgba(76, 41, 101, 0.73);
         font-weight: bold;
+
     }
 
     .box_eventer{
@@ -531,8 +526,8 @@ a {
         box-shadow: 5px 3px 20px rgba(60, 83, 115, 0.51);
         border-radius: 8px;
         padding: 5px 60px;
-        margin: 15px 0;
         align-items: center;
+        margin-top: 10px;
     }
 
     .button_create_event{
@@ -563,11 +558,12 @@ a {
         margin-top: 0;
         margin-bottom: 10px;
         border-radius: 8px;
-        padding: 30px 70px;
+        width: 500px;
+        padding: 30px 0;
+        text-align: center;
     }
 
     .events_list a{
-        margin-top: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -583,7 +579,7 @@ a {
     }
 
     .events_list ul li img{
-        width: 60px;
+        width: 50px;
     }
 
     .flex_event {
@@ -604,7 +600,8 @@ a {
 
     .event_title {
         font-size: 5rem;
-        background-color: rgba(57, 92, 138, 0.77);
+        color: antiquewhite;
+        background-color: rgba(111, 62, 145, 0.58);
         border-radius: 2rem;
         padding: 1rem;
     }
@@ -613,22 +610,36 @@ a {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        font-weight: bold;
     }
 
     .details_icons {
         width: 5rem;
     }
 
-    .event_buttons a {
+    .event_buttons a{
         font-size: 3rem;
-        padding: 1rem;
-        background: #395c8a;
-        color: white;
+        padding: 1.5rem;
+        background: white;
+        border: 2px solid #395C8AFF;
+        color: #395C8AFF;
         border-radius: 2rem;
-        margin-right: 4rem;
     }
 
     .event_buttons a:hover {
+        background: #395c8a;
+        color: white;
+    }
+
+    .event_buttons_participate a {
+        font-size: 3rem;
+        padding: 1.5rem;
+        background: #395c8a;
+        color: white;
+        border-radius: 2rem;
+    }
+
+    .event_buttons_participate a:hover {
         background: white;
         color: #395c8a;
     }
@@ -637,13 +648,58 @@ a {
         margin-bottom: 2rem;
     }
 
-    .event_buttons_margin div {
-        margin: 3rem;
+    .event_buttons_margin div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+        margin-bottom: 50px;
+
     }
 
+    .create_event_form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2rem;
+    }
 
+    .create_event_form form input, div textarea, div input {
+        font-size: 2rem;
+    }
 
+    .create_event_form form select option{
+        font-size: medium;
+    }
 
+    .create_event_form form div textarea{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
 
+    .create_event_form input, div input{
+        box-sizing: border-box;
+        outline: none;
+        display: block;
+        width: 100%;
+        padding: 7px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        height: 45px;
+    }
+
+    .button_event_creation{
+        font-size: 1.5rem;
+        color: white;
+        background-color: #011936;
+        border-radius: 30px;
+        padding: 30px 60px;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
 
 }
