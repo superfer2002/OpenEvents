@@ -741,4 +741,39 @@
         margin-bottom: 3rem;
     }
 
+    .eventology_list div {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border: 0.1rem solid;
+        border-radius: 1rem;
+    }
+
+    .flex_eventology {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .eventology_icons img {
+        width: 5rem;
+        padding: 3rem;
+    }
+
+    .flex_eventology_events {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .eventology_desktop_arrow {
+        width: 8rem;
+    }
+
+    .eventology_details a {
+        margin: 0;
+    }
+
+    .eventology_details ul, ul li{
+        margin-right: 3rem;
+        padding-top: 1.5rem;
+    }
+
 }

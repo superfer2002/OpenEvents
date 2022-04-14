@@ -629,7 +629,7 @@ a {
         width: 500px;
     }
 
-    .event_title_box{
+    .event_title_box {
         margin-top: 0;
         margin-bottom: 10px;
         border-radius: 8px;
@@ -755,21 +755,22 @@ a {
         margin-bottom: 3rem;
     }
 
-    .time_line {
-        position: relative;
+    .eventology_list div {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border: 0.1rem solid;
+        border-radius: 1rem;
     }
 
-    .vl {
-        border-left: 6px solid #9BA3DAFF;
-        height: 100%;
-        position: absolute;
-        left: 50%;
+    .flex_eventology {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
 
     }
 
-    .eventology_content {
-        position: relative;
+    .eventology_icons img {
+        width: 4rem;
     }
-
 
 }
