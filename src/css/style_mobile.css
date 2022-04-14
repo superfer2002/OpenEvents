@@ -150,6 +150,32 @@ a {
     background-color: rgba(215, 174, 36, 0.87);
 }
 
+.delete_size {
+    font-size: 2.8rem;
+}
+
+.delete_profile_anyway {
+    padding: 2rem;
+    color: whitesmoke;
+    background-color: darkred;
+    border-radius: 2rem;
+}
+
+.delete_profile_anyway:hover {
+    font-size: 4rem;
+}
+
+.delete_cancel {
+    padding: 2rem;
+    background-color: whitesmoke;
+    color: darkred;
+    border-radius: 2rem;
+}
+
+.delete_cancel:hover {
+    font-size: 4rem;
+}
+
 @media (max-device-width: 420px) {
 
     main {
@@ -772,5 +798,6 @@ a {
     .eventology_icons img {
         width: 4rem;
     }
+
 
 }
