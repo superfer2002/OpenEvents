@@ -43,6 +43,10 @@ a {
     align-items: center;
 }
 
+.friend_info{
+    align-items: flex-start;
+}
+
 .friends_profile_img {
     border-radius: 10rem;
     width: 10rem;
@@ -53,6 +57,10 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.info_friend{
+    align-items: flex-start;
 }
 
 .top_padding {
@@ -587,8 +595,11 @@ a {
         margin: 50px 0;
     }
 
+    .filters_desktop{
+        display: none;
+    }
+
     .show_categories {
-        margin-top: 10px;
         font-size: 2.2rem;
         color: rgba(76, 41, 101, 0.73);
         font-weight: bold;
@@ -602,8 +613,7 @@ a {
         box-shadow: 5px 3px 20px rgba(60, 83, 115, 0.51);
         border-radius: 8px;
         padding: 5px 60px;
-        align-items: center;
-        margin-top: 10px;
+        margin-top: 30px;
     }
 
     .button_create_event{
@@ -771,6 +781,54 @@ a {
 
     .eventology_icons img {
         width: 4rem;
+    }
+
+    .margins_filter{
+        margin: 0 8rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .filters_mobile_header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .filters_mobile_header h3{
+        margin-left: 50px;
+        font-weight: bold;
+    }
+
+    .filters_background{
+        background: rgba(137, 149, 180, 0.73);
+    }
+
+    .filters_input {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 2.3rem;
+    }
+
+    .filters_input input{
+        padding: 7px;
+        margin-bottom: 5rem;
+        margin-top: 1rem;
+        border-color: #9ba3da;
+        border-radius: 10px;
+        font-size: 2rem;
+    }
+
+    .filters_input article {
+        align-items: flex-start;
+    }
+
+    .delete_filters{
+        text-align: right;
+        font-size: 2rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
     }
 
 }

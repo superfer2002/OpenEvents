@@ -79,6 +79,24 @@
                         />
                     </a>
                 </div>
+                <div class="top_padding">
+                    <div class="filters_desktop">
+                        <label for="location">Chose the starting date:</label>
+                        <input type="date" id="start_date" name="event_start" value="Today" min="2022-04-01">
+
+                        <label for="start_date">Choose the location:</label>
+                        <input type="text" id="location" name="location" required minlength="1" maxlength="30" placeholder="location" />
+                    </div>
+                    <div class="filters_desktop">
+                            <input type="radio" id="dewey" name="drone" value="dewey">
+                            <label for="dewey">Dewey</label>
+                            <label for="descending">Descending</label>
+                            <input type="radio" id="descending" name="descending" value="descending">
+                    </div>
+                    <div class="filters_desktop delete_filters">
+                        <a href="./filter_events.html">Delete filters</a>
+                    </div>
+                </div>
                 <div class="box_eventer">
                     <h5>Are you an eventer?</h5>
                     <h5>Create your event now!</h5>

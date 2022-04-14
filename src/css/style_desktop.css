@@ -488,17 +488,17 @@
 
     .categories_buttons a{
         font-size: 2.5rem;
-        color: #3c5373;
+        color: rgba(3, 50, 107, 0.96);
         border-radius: 10px;
-        border: 2px solid #3c5373;
+        border: 2px solid rgba(3, 50, 107, 0.96);
         padding: 10px 8px;
         margin: 0 10px;
     }
 
     .categories_buttons a:hover{
-        background: rgba(152, 111, 180, 0.53);
-        border-color: rgba(152, 111, 180, 0.53);
-        color: #4a2465;
+        background: rgb(168, 190, 218);
+        border-color: rgb(168, 190, 218);
+        color: rgba(3, 50, 107, 0.96);
     }
 
     .events_general_flex{
@@ -509,6 +509,9 @@
     .my_events_button {
         display: flex;
         flex-direction: column;
+        min-width: 150px;
+        align-items: flex-start;
+        margin-top: 20px;
     }
 
     .my_events_button a{
@@ -535,6 +538,24 @@
         display: none;
     }
 
+    .filters_desktop{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 2.2rem;
+    }
+
+    .delete_filters{
+        margin-top: 3rem;
+        text-align: right;
+        font-weight: bold;
+    }
+
+    .order_filter{
+        display: flex;
+        flex-direction: row;
+    }
+
     .box_eventer{
         color: #000000;
         background-color: rgba(197, 209, 224, 0.86);
@@ -542,7 +563,7 @@
         border-radius: 8px;
         padding: 0 15px;
         margin: 20px 0;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .button_create_event{
@@ -554,7 +575,8 @@
     }
 
     .box_eventer h5{
-        font-size: 2rem;
+        font-size: 2.3rem;
+        margin-bottom: 0;
     }
 
     .events_list {
