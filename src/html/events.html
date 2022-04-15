@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenEvents</title>
+    <link rel="icon" type = "image/png" href="../media/images/oe_logo.jpg"/>
+    <link rel="reset" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/style_mobile.css" />
+    <link rel="stylesheet" href="../css/style_desktop.css" />
+    <!--360 x 740 (Samsung s8+) -->
+</head>
+<body>
+    <header>
+        <section class="flex_header margins">
+            <article>
+                <a href="home.html"><h1 id="mainTitle">OpenEvents</h1></a>
+            </article>
+            <article>
+                <div>
+                    <nav>
+                        <a href="search.html">
+                            <img
+                                src="../media/images/icons/search_icon.png"
+                                alt="search icon"
+                            />
+                        </a>
+                        <a href="./events.html">
+                            <img
+                                src="../media/images/icons/party_icon.png"
+                                alt="events icon"
+                            />
+                        </a>
+                        <a href="friends.html">
+                            <img
+                                src="../media/images/icons/friends_icon.png"
+                                alt="friends icon"
+                            />
+                        </a>
+                        <a href="profile.html">
+                            <img
+                                src="../media/images/icons/profile_icon.png"
+                                alt="profile icon"
+                            />
+                        </a>
+                        <a href="index.html">
+                            <img
+                                src="../media/images/icons/logout_icon.png"
+                                alt="log out icon"
+                            />
+                        </a>
+                    </nav>
+                </div>
+            </article>
+        </section>
+    </header>
+
+    <main>
+        <h2 class="home_title">Discover Events</h2>
+        <section class="categories_buttons">
+            <a href="./events.html">TRENDING</a>
+            <a href="./events.html">MUSIC</a>
+            <a href="./events.html">EDUCATION</a>
+            <a href="./events.html">SPORTS</a>
+        </section>
+
+        <section class="events_general_flex">
+            <article class="margins">
+                <div class="my_events_button">
+                    <a href="terms.html">List MY EVENTS</a>
+                    <a href="eventology.html">Visit your EVENTOLOGY</a>
+                </div>
+                <div class="filters">
+                    <a class="show_categories" href="./events.html">show more categories</a>
+                    <a  class="filters_icon" href="filter_events.html">
+                        <img
+                            src="../media/images/icons/settings_icon.png"
+                            alt="settings icon"
+                            width="50"
+                        />
+                    </a>
+                </div>
+                <div class="top_padding">
+                    <div class="filters_desktop">
+                        <label for="location">Chose the starting date:</label>
+                        <input type="date" id="start_date" name="event_start" value="Today" min="2022-04-01">
+
+                        <label for="start_date">Choose the location:</label>
+                        <input type="text" id="location" name="location" required minlength="1" maxlength="30" placeholder="location" />
+                    </div>
+                    <div class="filter_order">
+                        <div>
+                            <input type="radio" id="ascending" name="order" value="order">
+                            <label for="ascending">Ascending</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="descending" name="order" value="order">
+                            <label for="descending">Descending</label>
+                        </div>
+                    </div>
+                    <div class="filters_desktop delete_filters">
+                        <a href="filter_events.html">Delete filters</a>
+                    </div>
+                </div>
+                <div class="box_eventer">
+                    <h5>Are you an eventer?</h5>
+                    <h5>Create your event now!</h5>
+                    <a href="create_event.html"><h4 class="button_create_event">Create an event</h4></a>
+                </div>
+            </article>
+            <article class="events_list">
+                <div class="events_details">
+                    <a href="event.html">
+                        <div><img class="img_events" src="../media/images/events/roller_coaster_event.jpg" alt="rollercoaster_image" width="450"></div>
+                        <h3 class="event_title_box category_travel">Annual Wonderland</h3>
+                        <ul>
+                            <li><img src="../media/images/icons/location_icon.png" alt=""> Location: Barcelona</li>
+                            <li><img src="../media/images/icons/calendar_icon.png" alt="">Start date: 10 Mar, 2022</li>
+                            <li><img src="../media/images/icons/group_icon.png" alt="">Max participants: 500</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="events_details">
+                    <a href="event.html">
+                        <div><img class="img_events" src="../media/images/events/eating_event.jpg" alt="food_image" width="450"></div>
+                        <h3 class="event_title_box category_food">Eat Fest</h3>
+                        <ul class="">
+                            <li><img src="../media/images/icons/location_icon.png" alt=""> Location: Castelldefels</li>
+                            <li><img src="../media/images/icons/calendar_icon.png" alt="">Start date: 24 April, 2022</li>
+                            <li><img src="../media/images/icons/group_icon.png" alt="">Max participants: 1000</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="events_details">
+                    <a href="event.html">
+                        <div><img class="img_events" src="../media/images/events/gig_event.jpg" alt="concert_image"></div>
+                        <h3 class="event_title_box category_music">NightMade music festival</h3>
+                        <ul class="">
+                            <li><img src="../media/images/icons/location_icon.png" alt=""> Location: Barcelona</li>
+                            <li><img src="../media/images/icons/calendar_icon.png" alt="">Start date: 10 June, 2022</li>
+                            <li><img src="../media/images/icons/group_icon.png" alt="">Max participants: 200</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="events_details">
+                    <a href="event.html">
+                        <div><img class="img_events" src="../media/images/events/sports_event.jpg" alt="basket_image" width="450"></div>
+                        <h3 class="event_title_box category_sports">FightBall</h3>
+                        <ul class="">
+                            <li><img src="../media/images/icons/location_icon.png" alt=""> Location: Esplugues</li>
+                            <li><img src="../media/images/icons/calendar_icon.png" alt="">Start date: 24 May, 2022</li>
+                            <li><img src="../media/images/icons/group_icon.png" alt="">Max participants: 100</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="events_details">
+                    <a href="event.html">
+                        <div><img class="img_events" src="../media/images/events/games_event.jpg" alt="just_dance_image" width="450"></div>
+                        <h3 class="event_title_box category_games">Share your move</h3>
+                        <ul class="">
+                            <li><img src="../media/images/icons/location_icon.png" alt=""> Location: Lloret de Mar</li>
+                            <li><img src="../media/images/icons/calendar_icon.png" alt="">Start date: 24 June, 2022</li>
+                            <li><img src="../media/images/icons/group_icon.png" alt="">Max participants: 2000</li>
+                        </ul>
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="flex_footer">
+        <section class="inlineNav">
+            <div>
+                <h4 class="white">OpenEvents</h4>
+            </div>
+            <div>
+                <nav>
+                    <div><a class="white" href="terms.html"><h5>Terms of use</h5></a></div>
+                    <div><a class="white" href="privacy.html"><h5>Privacy Policy</h5></a></div>
+                </nav>
+            </div>
+        </section>
+        <div>
+            <h5 class="white">© 1996-2022 OpenEvents.com, Inc. or its affiliates</h5>
+        </div>
+    </footer>
+</body>
+</html>

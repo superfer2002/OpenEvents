@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenEvents</title>
+    <link rel="icon" type = "image/png" href="../media/images/oe_logo.jpg"/>
+    <link rel="reset" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/style_mobile.css" />
+    <link rel="stylesheet" href="../css/style_desktop.css" />
+    <!--360 x 740 (Samsung s8+) -->
+</head>
+<body>
+    <header class="filters_background">
+        <section class="margins_filter filters_mobile_header">
+            <article class="filters_mobile_header">
+                <a href="./filter_events.html">
+                    <img
+                        src="../media/images/icons/settings_icon.png"
+                        alt="filters icon"
+                        width="70"
+                    />
+                </a>
+                <h3>filters</h3>
+            </article>
+            <article class="filters_mobile_header">
+                <a href="events.html">
+                    <img
+
+                        src="../media/images/icons/close_icon.png"
+                        alt="close filters icon"
+                        width="80"
+                    />
+                </a>
+            </article>
+        </section>
+    </header>
+    <main class="margins_filter">
+        <section class="filters_input">
+            <label for="location">Chose the starting date:</label>
+            <input type="date" id="start_date" name="event_start" value="Today" min="2022-04-01">
+
+            <label for="start_date">Choose the location:</label>
+            <input type="text" id="location" name="location" required minlength="1" maxlength="30" placeholder="location" />
+        </section>
+        <section class="filters_input">
+            <article>
+                <label for="ascending">
+                    <input type="radio" id="ascending" name="ascending" value="ascending">
+                    Ascending</label>
+            </article>
+            <article>
+                <label for="descending">
+                    <input type="radio" id="descending" name="descending" value="descending">
+                    Descending</label>
+            </article>
+        </section>
+
+        <section class="delete_filters">
+            <a href="./filter_events.html">Delete filters</a>
+        </section>
+
+        <section class="create_event_form">
+            <button class="button_event_creation" type="button" onclick="window.location.href='home.html'">APPLY</button>
+        </section>
+    </main>
+
+    <footer></footer>
+
+</body>
+</html>
