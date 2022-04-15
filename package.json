@@ -7,11 +7,9 @@
     "build-windows": "rmdir /Q /S dist\\media && mkdir dist\\media && xcopy /S /E .\\src\\media .\\dist\\media && npm run html-minifier && npm run css-minifier",
     "build-mac": "rm -r dist/media && cp -r ./src/media ./dist/media && npm run html-minifier && npm run css-minifier",
     "start": "node app.js",
-    "watch": "nodemon",
-    "browser-reload": "browser-sync start --proxy \"localhost:3000\" --files dist/*",
+    "watch": "browser-sync start --proxy \"localhost:3000/index.html\" --files dist/home.html",
     "html-minifier": "html-minifier --input-dir src --output-dir dist --file-ext html --remove-comments --collapse-whitespace --minify-js true --minify-css true",
     "css-minifier": "html-minifier --input-dir src --output-dir dist --file-ext css --remove-comments --collapse-whitespace --minify-js true --minify-css true"
-
   },
   "repository": {
     "type": "git",
@@ -25,6 +23,7 @@
   },
   "homepage": "https://github.com/superfer2002/OpenEvents#readme",
   "dependencies": {
+    "browser-sync": "^2.27.9",
     "express": "^4.17.3",
     "html-minifier": "^4.0.0",
     "nodemon": "^2.0.15"
