@@ -10,12 +10,16 @@
     <!--360 x 740 (Samsung s8+) -->
 </head>
 <body>
+    <!--Main divided in 2 sections having two main blocks of information-->
     <main>
+        <!--Section containing 2 articles, one for title and the other for user input-->
         <section class="backgroundImg">
             <article class="flex_login">
+                <!--H1 for the main title of the html-->
                 <h1 id="mainTitle">OpenEvents</h1>
             </article>
             <article class="flex_login">
+                <!--Form containing user inputs, wrapped together to send the information at the same time-->
                 <form class="indexInput, input_box">
                     <input type="email" id="mail" name="mail"
                            size="10" placeholder="e-mail" pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
@@ -24,12 +28,14 @@
                     <button class="buttonLogIn" type="button" onclick="window.location.href='./home.html'">Log in</button>
                 </form>
             </article>
+        <!--Section containing 2 articles, one for question and the other for user input-->
         </section>
         <section>
             <article class="flex_signup">
                 <h3>Do you want to create an account?</h3>
             </article>
             <article class="flex_signup">
+                <!--Form containing user inputs, wrapped together to send the information at the same time-->
                 <form class="input_box">
                     <input type="text" id="name" name="name" required
                            minlength="1" maxlength="50" size="10" placeholder="name" />

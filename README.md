@@ -9,3 +9,4 @@ Emma Tarazona & Fernando Porcel
 
 # Tools
 - Phone resolution: 360 x 740 (Samsung s8+)
+- Commented HTMLs: index.html & events.html
