@@ -11,6 +11,7 @@
     "browser-reload": "browser-sync start --proxy \"localhost:3000\" --files dist/*",
     "html-minifier": "html-minifier --input-dir src --output-dir dist --file-ext html --remove-comments --collapse-whitespace --minify-js true --minify-css true",
     "css-minifier": "html-minifier --input-dir src --output-dir dist --file-ext css --remove-comments --collapse-whitespace --minify-js true --minify-css true"
+
   },
   "repository": {
     "type": "git",
