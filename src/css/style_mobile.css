@@ -8,17 +8,21 @@ body {
 }
 
 * {
-    font-family: "Lucida Sans", sans-serif ;
+    font-family: "Helvetica", sans-serif ;
     font-weight: lighter;
     line-height: 1em;
 }
 
 #mainTitle {
     color: #D9E7FDFF;
-    font-family: "Lucida Sans", sans-serif;
     font-weight: bolder;
     letter-spacing: 0.05em;
     text-shadow: 5px 3px 2px #3c5373, 6px 4px 5px #1e2538, 8px 5px 15px #ffffff;
+}
+
+#home_background{
+    background: #eef3f8;
+    background: linear-gradient(60deg, #bfbaff 0%, #ecedfd 70%);
 }
 
 a {
@@ -61,10 +65,6 @@ a {
 
 .info_friend{
     align-items: flex-start;
-}
-
-.top_padding {
-    padding-top: 5rem;
 }
 
 .friend_add {
@@ -603,7 +603,6 @@ a {
         font-size: 2.2rem;
         color: rgba(76, 41, 101, 0.73);
         font-weight: bold;
-
     }
 
     .box_eventer{
@@ -686,7 +685,7 @@ a {
     .event_title {
         font-size: 5rem;
         color: antiquewhite;
-        background-color: rgba(111, 62, 145, 0.58);
+        background-color: rgba(62, 145, 142, 0.84);
         border-radius: 2rem;
         padding: 1rem;
     }
@@ -829,6 +828,11 @@ a {
         font-size: 2rem;
         margin-top: 10rem;
         margin-bottom: 10rem;
+    }
+
+    .delete_filters a {
+        color: #38487c;
+        font-weight: bold;
     }
 
 }

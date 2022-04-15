@@ -1,15 +1,8 @@
 @media (min-device-width: 421px) {
     main {
-        padding: 10px;
+        padding: 20px;
         min-height: calc(
-                100vh - 20px - 120px - var(--footer-padding) * 2 - var(--footer-height)
-        );
-    }
-
-    main {
-        padding: 10px;
-        min-height: calc(
-                100vh - 20px - 120px - var(--footer-padding) * 2 - var(--footer-height)
+                100vh - 20px - 115px - var(--footer-padding) * 2 - var(--footer-height)
         );
     }
 
@@ -214,9 +207,8 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        padding-bottom: 70px;
-        padding-top: 50px;
-        width: 300px;
+        width: 400px;
+        height: 300px
     }
 
     .bkgEvents {
@@ -224,25 +216,25 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        padding-bottom: 70px;
-        padding-top: 50px;
-        width: 290px;
+        width: 400px;
+        height: 300px;
     }
 
     .friendsHome {
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: rgb(208, 242, 255);
-        background: rgba(77, 76, 117, 0.82);
+        color: rgb(225, 234, 241);
+        background: rgba(76, 83, 117, 0.82);
         border-radius: 7px;
         padding: 4px;
-        max-width: 70rem;
         transition: transform 250ms, opacity 400ms;
+        font-weight: bold;
     }
 
     .friendsHome:hover{
-        transform: scale(1.2);
+        transform: translate3d(3%, -6%, 10px);
+        background: rgb(77, 76, 117);
     }
 
     .flex_home div  {
@@ -251,17 +243,18 @@
         align-items: center;
     }
 
-    .flex_bkg_home div a {
+    .flex_bkg_home {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 20px 200px;
     }
 
     .home_title {
         display: flex;
         flex-direction: column;
         align-content: center;
-        font-size: 5rem;
+        align-items: center;
     }
 
     .searchBox:focus {
@@ -520,11 +513,36 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        font-size: 2.2rem;
+        font-size: 2.3rem;
+    }
+
+    .filters_desktop a {
+        color: #38487c;
+        font-weight: bold;
+    }
+
+    .filter_order {
+        align-items: flex-start;
+    }
+
+    .filter_order div{
+        display: flex;
+        flex-direction: row;
+        font-size: 2.3rem;
+    }
+
+    .filter_order div label{
+        margin-bottom: 1.5rem;
+    }
+
+    input[type="radio"]{
+        width: 1.15em;
+        height: 1.15em;
     }
 
     .delete_filters{
         margin-top: 3rem;
+        margin-bottom: 5rem;
         text-align: right;
         font-weight: bold;
     }
@@ -619,9 +637,10 @@
 
     .event_title {
         font-size: 5rem;
-        background-color: rgba(57, 92, 138, 0.94);
+        color: antiquewhite;
+        background-color: rgba(62, 145, 142, 0.84);
         border-radius: 2rem;
-        padding: 1rem;
+        padding: 2rem;
     }
 
     .event_subtitle {
@@ -635,12 +654,6 @@
         display: flex;
         flex-direction: row;
         margin-right: 2rem;
-    }
-
-    .flex_details_2 {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
     }
 
     .details_icons {
