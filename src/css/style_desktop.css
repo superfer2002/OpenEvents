@@ -64,7 +64,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        wrap-option: wrap;
     }
 
     .backgroundImg{
@@ -80,7 +79,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        wrap-option: wrap;
     }
 
 
@@ -454,7 +452,6 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        wrap-option: wrap;
         flex-wrap: wrap;
     }
 
@@ -580,7 +577,6 @@
         display: flex;
         flex-direction: row;
         padding: 8px;
-        wrap-option: wrap;
         flex-wrap: wrap;
     }
 
@@ -758,8 +754,8 @@
     .eventology_list div {
         margin-top: 2rem;
         margin-bottom: 2rem;
-        border: 0.1rem solid;
-        border-radius: 1rem;
+        border: 0.5rem solid #434952;
+        border-radius: 3rem;
     }
 
     .flex_eventology {
