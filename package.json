@@ -4,8 +4,8 @@
   "description": "OpenEvents allows you to interact with events and members of a community.",
   "main": "app.js",
   "scripts": {
-    "build-windows": "rmdir /Q /S dist\\media && mkdir dist\\media && xcopy /S /E .\\src\\media .\\dist\\media && npm run html-minifier && npm run css-minifier",
-    "build-mac": "rm -r dist/media && cp -r ./src/media ./dist/media && npm run html-minifier && npm run css-minifier",
+    "build-windows": "mkdir dist\\media && xcopy /S /E .\\src\\media .\\dist\\media && npm run html-minifier && npm run css-minifier",
+    "build-mac": "cp -r ./src/media ./dist/media && npm run html-minifier && npm run css-minifier",
     "start": "node app.js",
     "watch": "browser-sync start --proxy \"localhost:3000\" --files dist/*",
     "debug": "nodemon",
