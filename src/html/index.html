@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!--Made by Emma Tarazona and Fernando Porcel-->
+    <meta charset="UTF-8" name="OpenEvents" content="OpenEvents allows you to interact with events and members of a community.">
     <title>OpenEvents</title>
-    <link rel="icon" type = "image/png" href="../media/images/oe_logo.jpg"/>
-    <link rel="reset" href="../css/reset.css"/>
-    <link rel="stylesheet" href="../css/style_mobile.css" />
-    <link rel="stylesheet" href="../css/style_desktop.css" />
+    <link rel="icon" type = "image/png" href="./media/images/oe_logo.jpg"/>
+    <link rel="reset" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/style_mobile.css" />
+    <link rel="stylesheet" href="./css/style_desktop.css" />
     <!--360 x 740 (Samsung s8+) -->
 </head>
 <body>
-    <main>
-        <section class="backgroundImg">
-            <article class="flex_login">
-                <h1 id="mainTitle">OpenEvents</h1>
-            </article>
-            <article class="flex_login">
-                <form class="indexInput, input_box">
-                    <input type="email" id="mail" name="mail"
-                           size="10" placeholder="e-mail" pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
-                    <input type="password" id="password" name="password" required
-                           size="10" placeholder="password" />
-                    <button class="buttonLogIn" type="button" onclick="window.location.href='home.html'">Log in</button>
-                </form>
-            </article>
-        </section>
-        <section>
-            <article class="flex_signup">
-                <h3>Do you want to create an account?</h3>
-            </article>
-            <article class="flex_signup">
-                <form class="input_box">
-                    <input type="text" id="name" name="name" required
-                           minlength="1" maxlength="50" size="10" placeholder="name" />
-                    <input type="text" id="lastname" name="lastname" required
-                           minlength="1" maxlength="50" size="10" placeholder="lastname" />
-                    <input type="email" id="newMail" name="newMail"
-                           minlength="11" maxlength="150" size="10" placeholder="e-mail" pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
-                    <input type="password" id="newPassword" name="password" required
-                           minlength="1" maxlength="15" size="10" placeholder="password" />
-                    <button class="buttonSignUp" type="button" onclick="window.location.href='home.html'">Sign up</button>
-                </form>
-            </article>
-        </section>
-    </main>
+<!--Main divided in 2 sections having two main blocks of information-->
+<main>
+    <!--Section containing 2 articles, one for title and the other for user input-->
+    <section class="backgroundImg">
+        <article class="flex_login">
+            <!--H1 for the main title of the html-->
+            <h1 id="mainTitle">OpenEvents</h1>
+        </article>
+        <article class="flex_login">
+            <!--Form containing user inputs, wrapped together to send the information at the same time-->
+            <form class="indexInput, input_box">
+                <input type="email" id="mail" name="mail"
+                       size="10" placeholder="e-mail" pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
+                <input type="password" id="password" name="password" required
+                       size="10" placeholder="password" />
+                <!--Button that sends the login information-->
+                <button class="buttonLogIn" type="button" onclick="window.location.href='./home.html'">Log in</button>
+            </form>
+        </article>
+        <!--Section containing 2 articles, one for question and the other for user input-->
+    </section>
+    <section>
+        <article class="flex_signup">
+            <h3>Do you want to create an account?</h3>
+        </article>
+        <article class="flex_signup">
+            <!--Form containing user inputs, wrapped together to send the information at the same time-->
+            <form class="input_box">
+                <!--Text type for normal input without hiding or requirements-->
+                <input type="text" id="name" name="name" required
+                       minlength="1" maxlength="50" size="10" placeholder="name" />
+                <input type="text" id="lastname" name="lastname" required
+                       minlength="1" maxlength="50" size="10" placeholder="lastname" />
+                <!--Email type for email input with some email restrictions-->
+                <input type="email" id="newMail" name="newMail"
+                       minlength="11" maxlength="150" size="10" placeholder="e-mail" pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
+                <!--Password type for hided input for passwords-->
+                <input type="password" id="newPassword" name="password" required
+                       minlength="1" maxlength="15" size="10" placeholder="password" />
+                <!--Button that sends the signup information-->
+                <button class="buttonSignUp" type="button" onclick="window.location.href='./home.html'">Sign up</button>
+            </form>
+        </article>
+    </section>
+</main>
 </body>
 </html>
