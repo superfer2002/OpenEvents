@@ -7,7 +7,7 @@
     "build-windows": "rmdir /Q /S dist\\media && mkdir dist\\media && xcopy /S /E .\\src\\media .\\dist\\media && npm run html-minifier && npm run css-minifier",
     "build-mac": "rm -r dist/media && cp -r ./src/media ./dist/media && npm run html-minifier && npm run css-minifier",
     "start": "node app.js",
-    "watch": "browser-sync start --proxy \"localhost:3000/index.html\" --files dist/home.html",
+    "watch": "browser-sync start --proxy \"localhost:3000\" --files dist/*",
     "debug": "nodemon",
     "html-minifier": "html-minifier --input-dir src --output-dir dist --file-ext html --remove-comments --collapse-whitespace --minify-js true --minify-css true",
     "css-minifier": "html-minifier --input-dir src --output-dir dist --file-ext css --remove-comments --collapse-whitespace --minify-js true --minify-css true"
@@ -17,7 +17,7 @@
     "url": "git+https://github.com/superfer2002/OpenEvents.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Fernando Porcel López and Emma Tarazona García",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/superfer2002/OpenEvents/issues"

@@ -521,7 +521,6 @@ a {
     .star:after {
         content: "\f005";
         font-family: fontAwesome;
-        position: absolute;
         top: 7px;
         font-size: 60px;
         color: gold;
